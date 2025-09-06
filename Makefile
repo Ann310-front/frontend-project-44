@@ -1,4 +1,4 @@
-.PHONY: install publish brain-games
+.PHONY: lint
 
 install:
 	npm ci
@@ -8,3 +8,5 @@ publish:
 
 brain-games:
 	node bin/brain-games.js
+lint:
+	npx eslint .

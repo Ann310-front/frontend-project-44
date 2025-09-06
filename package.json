@@ -5,13 +5,16 @@
   "type": "module",
   "main": "index.js",
   "bin": {
-      "brain-games": "./bin/brain-games.js",
-      "brain-even": "bin/brain-even.js"
-    },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "brain-games": "./bin/brain-games.js",
+    "brain-even": "bin/brain-even.js"
   },
-    "repository": {
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+     "lint": "eslint .",
+     "lint:fix": "eslint --fix ."
+
+  },
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/Ann310-front/frontend-project-44.git"
   },
@@ -23,5 +26,8 @@
   "homepage": "https://github.com/Ann310-front/frontend-project-44#readme",
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.34.0"
   }
 }
