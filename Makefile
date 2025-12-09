@@ -6,4 +6,6 @@ publish:
 brain-games:
 	node bin/brain-games.js
 lint:
-	npx eslint
+	npx eslint .
+lint-fix:
+	npx eslint --fix 
