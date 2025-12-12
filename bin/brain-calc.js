@@ -7,8 +7,8 @@ const calculator = () => {
   console.log('What is the result of the expression?')
 
   for (let i = 0; i < 3; i++) {
-    const number1 = Math.floor(Math.random() * 100) + 1
-    const number2 = Math.floor(Math.random() * 100) + 1
+    const number1 = Math.floor(Math.random() * 100) + 1 // NOSONAR
+    const number2 = Math.floor(Math.random() * 100) + 1 // NOSONAR
     const operators = ['+', '-', '*']
     const operator = operators[Math.floor(Math.random() * operators.length)]
     let correctAnswer
