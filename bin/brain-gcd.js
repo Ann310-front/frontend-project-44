@@ -15,8 +15,8 @@ const gcdGame = () => {
   const name = greeting()
   console.log('Find the greatest common divisor of given numbers.')
   for (let i = 0; i < 3; i++) {
-    const number1 = Math.floor(Math.random() * 100) + 1
-    const number2 = Math.floor(Math.random() * 100) + 1
+    const number1 = Math.floor(Math.random() * 100) + 1 // NOSONAR
+    const number2 = Math.floor(Math.random() * 100) + 1 // NOSONAR
     const correctAnswer = calculateGCD(number1, number2).toString()
 
     console.log(`Question: ${number1} ${number2}`)

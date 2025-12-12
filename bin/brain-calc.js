@@ -10,7 +10,7 @@ const calculator = () => {
     const number1 = Math.floor(Math.random() * 100) + 1 // NOSONAR
     const number2 = Math.floor(Math.random() * 100) + 1 // NOSONAR
     const operators = ['+', '-', '*']
-    const operator = operators[Math.floor(Math.random() * operators.length)]
+    const operator = operators[Math.floor(Math.random() * operators.length)] // NOSONAR
     let correctAnswer
     let question
 

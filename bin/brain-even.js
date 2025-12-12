@@ -12,7 +12,7 @@ const game = () => {
   const name = greeting()
   console.log('Answer "yes" if the number is even, otherwise answer "no".')
   for (let i = 0; i < 3; i++) {
-    const number = Math.floor(Math.random() * 100) + 1
+    const number = Math.floor(Math.random() * 100) + 1 // NOSONAR
     console.log(`Question: ${number}`)
     const answer = readlineSync.question('Your answer: ')
     const correct = parity(number) ? 'yes' : 'no'

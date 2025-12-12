@@ -15,11 +15,11 @@ const arithmeticProgression = () => {
   console.log('What number is missing in the progression?')
 
   for (let i = 0; i < 3; i++) {
-    const start = Math.floor(Math.random() * 50) + 1
-    const step = Math.floor(Math.random() * 10) + 1
+    const start = Math.floor(Math.random() * 50) + 1 // NOSONAR
+    const step = Math.floor(Math.random() * 10) + 1 // NOSONAR
     const length = 10
     const progression = generateProgression(start, step, length)
-    const hiddenIndex = Math.floor(Math.random() * length)
+    const hiddenIndex = Math.floor(Math.random() * length) // NOSONAR
     const correctAnswer = progression[hiddenIndex].toString()
     const progressionWithHidden = [...progression]
     progressionWithHidden[hiddenIndex] = '..'
